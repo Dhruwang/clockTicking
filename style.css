@@ -78,6 +78,7 @@ ul li{
 .back{
     height: 100vh;
     width: 100%;
+    background-color:  rgb(201, 102, 244) ;  
     background-image: conic-gradient(from var(--a),rgb(0, 0, 0) 5deg, rgb(201, 102, 244) 90deg, white 450deg ); 
     animation: rotate 5s linear 0s infinite normal forwards;
     display: flex;
