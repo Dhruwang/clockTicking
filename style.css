@@ -1,0 +1,26 @@
+@property --a{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+  }
+body{
+    margin: 0;
+    padding: 0;
+}
+.back{
+    height: 100vh;
+    width: 100%;
+    background-image: conic-gradient(from var(--a),rgb(0, 0, 0) 1deg, rgb(107, 255, 206) 100deg, white 450deg ); 
+    animation: rotate 5s linear 0s infinite normal forwards;
+}
+.left{
+    border: 2px solid black;
+}
+@keyframes rotate {
+    from {
+        --a:0deg;
+    }
+        to {
+        --a:360deg;
+        }
+  }
