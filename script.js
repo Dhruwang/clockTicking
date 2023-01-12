@@ -1,4 +1,7 @@
 sideNavBar = document.getElementById("sideNavBar")
+color = document.getElementById("color")
+var r = document.querySelector(':root');
+
 
 handleSideBar=()=>{
     if (sideNavBar.style.transform === "translateX(0vw)") {
@@ -9,3 +12,7 @@ handleSideBar=()=>{
     }
     
 }
+color.addEventListener("input", function(){
+    r.style.setProperty('--b', color.value);
+  }, false);
+

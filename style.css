@@ -3,6 +3,10 @@
     inherits: false;
     initial-value: 0deg;
   }
+  :root {
+    --b: rgb(201, 102, 244);
+  }
+
   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald:wght@600&display=swap');
 body{
     margin: 0;
@@ -75,11 +79,16 @@ ul li{
     list-style: none;
     margin: 0rem 1rem;
 }
+#color{
+    position: absolute;
+    height: 3rem;
+    margin-left: 2rem;
+}
 .back{
     height: 100vh;
     width: 100%;
     background-color:  rgb(201, 102, 244) ;  
-    background-image: conic-gradient(from var(--a),rgb(0, 0, 0) 5deg, rgb(201, 102, 244) 90deg, white 450deg ); 
+    background-image: conic-gradient(from var(--a),rgb(0, 0, 0) 5deg, var(--b) 90deg, white 450deg ); 
     animation: rotate 5s linear 0s infinite normal forwards;
     display: flex;
     align-items: center;
